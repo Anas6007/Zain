@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evil Zain | دخول العالم</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0f0f1a, #000);
+      overflow: hidden;
+      color: #fff;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 4rem;
+      color: #ff0055;
+      text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055;
+      animation: float 4s ease-in-out infinite;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-top: 10px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 5px #a0a0ff;
+    }
+    .enter-btn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1rem;
+      background: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .enter-btn:hover {
+      background: #00ffff;
+      color: #000;
+      transform: scale(1.1);
+    }
+    .bg-effect {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: repeating-radial-gradient(circle, rgba(255,0,85,0.1) 0px, rgba(0,0,0,0) 50px);
+      animation: rotateBg 60s linear infinite;
+      z-index: 1;
+    }
+    @keyframes rotateBg {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-effect"></div>
+  <div class="container">
+    <h1>Evil Zain</h1>
+    <p>أهلاً بك في العالم المظلم للذكاء الاصطناعي</p>
+    <button class="enter-btn" onclick="location.href='https://6007.blogspot.com'">ادخل الآن</button>
+  </div>
+</body>
+</html>
